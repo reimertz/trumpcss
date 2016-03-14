@@ -103,6 +103,10 @@ main > section > img {
   max-width: 80%;
 }
 
+iframe {
+  width: 90px !important;
+}
+
 ::-webkit-input-placeholder {
    color: inherit;
 }
