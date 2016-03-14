@@ -38,20 +38,37 @@ nav {
   .trump-span {
     padding: 0 5px;
     font-weight: 700;
-    &[data-word="0"] {
-      color: inherit;
+    transition: 500ms;
+
+    body[data-word] & {
+      color: #ffdc18;
     }
-    &[data-word="1"] {
-      color: #718c00;
+
+    body[data-word="0" ] & {
+      filter: hue-rotate(0deg);
+      -webkit-filter: hue-rotate(0deg);
     }
-    &[data-word="2"] {
-      color: #eab700;
+    body[data-word="1" ] & {
+      filter: hue-rotate(60deg);
+      -webkit-filter: hue-rotate(60deg);
     }
-    &[data-word="3"] {
-      color: black;
+    body[data-word="2" ] & {
+      filter: hue-rotate(120deg);
+      -webkit-filter: hue-rotate(120deg);
     }
-    &[data-word="4"] {
-      color: #f5871f;
+    body[data-word="3" ] & {
+      filter: hue-rotate(180deg);
+      -webkit-filter: hue-rotate(180deg);
+    }
+
+    body[data-word="4" ] & {
+      filter: hue-rotate(240deg);
+      -webkit-filter: hue-rotate(240deg);
+    }
+
+    body[data-word="5" ] & {
+      filter: hue-rotate(300deg);
+      -webkit-filter: hue-rotate(300deg);
     }
   }
 
@@ -96,12 +113,39 @@ nav {
   .trump {
     width: 300px;
     animation-name: trump-spin;
-    animation-duration: 750ms;
-    transition: 1000ms;
+    animation-duration: 1750ms;
+    transition: 500ms;
 
     &:hover {
       filter: hue-rotate(360deg);
       -webkit-filter: hue-rotate(360deg);
+    }
+
+    body[data-word="0" ] & {
+      filter: hue-rotate(0deg);
+      -webkit-filter: hue-rotate(0deg);
+    }
+    body[data-word="1" ] & {
+      filter: hue-rotate(60deg);
+      -webkit-filter: hue-rotate(60deg);
+    }
+    body[data-word="2" ] & {
+      filter: hue-rotate(120deg);
+      -webkit-filter: hue-rotate(120deg);
+    }
+    body[data-word="3" ] & {
+      filter: hue-rotate(180deg);
+      -webkit-filter: hue-rotate(180deg);
+    }
+
+    body[data-word="4" ] & {
+      filter: hue-rotate(240deg);
+      -webkit-filter: hue-rotate(240deg);
+    }
+
+    body[data-word="5" ] & {
+      filter: hue-rotate(300deg);
+      -webkit-filter: hue-rotate(300deg);
     }
   }
 
@@ -145,6 +189,38 @@ main {
   }
   .title {
     font-size: 28px;
+
+    body[data-word] & {
+      color: #ffdc18;
+    }
+
+    body[data-word="0" ] & {
+
+      filter: hue-rotate(0deg);
+      -webkit-filter: hue-rotate(0deg);
+    }
+    body[data-word="1" ] & {
+      filter: hue-rotate(60deg);
+      -webkit-filter: hue-rotate(60deg);
+    }
+    body[data-word="2" ] & {
+      filter: hue-rotate(120deg);
+      -webkit-filter: hue-rotate(120deg);
+    }
+    body[data-word="3" ] & {
+      filter: hue-rotate(180deg);
+      -webkit-filter: hue-rotate(180deg);
+    }
+
+    body[data-word="4" ] & {
+      filter: hue-rotate(240deg);
+      -webkit-filter: hue-rotate(240deg);
+    }
+
+    body[data-word="5" ] & {
+      filter: hue-rotate(300deg);
+      -webkit-filter: hue-rotate(300deg);
+    }
   }
 
   .hljs {

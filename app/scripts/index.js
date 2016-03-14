@@ -14,9 +14,10 @@ function startWords(){
     var word  = words[index];
     trumpSpan.innerHTML = word;
     trumpSpan.setAttribute('data-word', index);
+    document.body.setAttribute('data-word', index);
 
     index = ( (index + 1)  >= words.length) ? 0 : index + 1;
-  }, 1000);
+  }, 1500);
 }
 
 setTimeout(startWords, 1000);
