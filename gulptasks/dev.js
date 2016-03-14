@@ -17,7 +17,7 @@ function getTemplateData() {
 }
 
 gulp.task('dev-extras', function () {
-  return gulp.src(['./app/CNAME', './app/favicon.ico'])
+  return gulp.src(['./app/CNAME', './app/trumpcss.png'])
     .pipe(gulp.dest('.tmp/'))
 });
 
@@ -57,7 +57,7 @@ gulp.task('dev-build', ['dev-trump-css','dev-scss','dev-jade','dev-js', 'dev-ext
 gulp.task('live-server', ['dev-build'], function(){
   var server = g.liveServer.static(['.tmp/'], 3000);
   server.start();
-  gulp.watch('./app/stylesheets/*.scss', ['dev-css']);
+  gulp.watch('./app/stylesheets/*.scss', ['dev-scss']);
   gulp.watch('./app/scripts/*.js', ['dev-js']);
   gulp.watch('./app/*.jade', ['dev-jade']);
 

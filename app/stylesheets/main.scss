@@ -41,9 +41,9 @@ nav {
   top: 0;
   width: 100%;
   margin: 0 auto;
-  padding-top: 50px;
+  padding-top: 0px;
   z-index: 1;
-  height: 200px;
+  height: 250px;
   background-color: inherit;
   z-index: 2;
 }
@@ -92,7 +92,11 @@ main {
 }
 
 main > section {
-  text-align: left;
+  text-align: center;
+}
+
+main > section > img {
+  max-width: 80%;
 }
 
 ::-webkit-input-placeholder {
