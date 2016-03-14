@@ -18,13 +18,13 @@ gulp.task('render-css', function () {
     .pipe(g.data(template))
     .pipe(swig())
     .pipe(g.rename('trump.latest.css'))
-    .pipe(gulp.dest('dist/latest/css/'))
+    .pipe(gulp.dest('dist/latest/'))
     .pipe(g.rename('trump.' + version + '.css'))
-    .pipe(gulp.dest('dist/'+ version + '/css/'))
+    .pipe(gulp.dest('dist/'+ version + '/'))
     .pipe(g.minifyCss())
     .pipe(g.rename('trump.' + version + '.min.css'))
-    .pipe(gulp.dest('dist/'+ version + '/css/'))
+    .pipe(gulp.dest('dist/'+ version + '/'))
     .pipe(g.rename('trump.latest.min.css'))
-    .pipe(gulp.dest('dist/latest/css/'));
+    .pipe(gulp.dest('dist/latest/'));
 });
 
