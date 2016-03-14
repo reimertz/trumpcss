@@ -1,9 +1,12 @@
-![](trumpcss.png)
+trump.css
+=========
+
+![](trumpcss_small.png)
 
 trump.css is for those who like to introduce a little bit of Trump
 on their homepage.
 
-All creds go to Brad Frost and his ![tweet](https://twitter.com/brad_frost/status/709364990881472512)
+All creds go to Brad Frost and his [tweet](https://twitter.com/brad_frost/status/709364990881472512)
 
 ##Installation
 
@@ -31,6 +34,7 @@ bower install trump-css
     <!-- use #usa and get a :after pseudo element containing the text "absolutely ruined" -->
   </section>
 ```
+
 
 ###Run trumpcss.com locally
 If you want to work on the static homepage, just run the following commands
