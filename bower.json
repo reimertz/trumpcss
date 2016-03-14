@@ -1,25 +1,19 @@
 {
-  "name": "brand-colors",
-  "version": "1.2.0",
-  "description": "A Collection with brand colors (CSS, LESS, SCSS, Stylus).",
-  "homepage": "https://brand-colors.com",
-  "main": "/dist/latest/trump.latest.css"
-  "authors": [
-    "Pierre Reimertz <pierre@pierrereimertz.com>"
-  ],
-  "homepage": "reimertz.github.io/brand-colors",
+  "name": "trump-css",
+  "version": "0.0.1",
+  "description": "trump.css is for those who like to introduce a little bit of Trump
+on their homepage.",
+  "homepage": "https://trumpcss.com",
+  "main": "/dist/latest/trump.latest.css",
+  "author": "Pierre Reimertz <pierre@pierrereimertz.com>",
+  "homepage": "http://trumpcss.com",
   "keywords": [
-    "brand",
-    "color",
-    "brand-color",
-    "branding"
+    "trump",
+    "css",
+    "stupid"
   ],
   "main": [
-    "dist/latest/css/brand-colors.latest.css",
-    "dist/latest/less/brand-colors.latest.less",
-    "dist/latest/sass/brand-colors.latest.sass",
-    "dist/latest/scss/brand-colors.latest.scss",
-    "dist/latest/stylus/brand-colors.latest.styl"
+    "dist/latest/css/trump.latest.css"
   ],
   "ignore": [
   "node-modules/**",
