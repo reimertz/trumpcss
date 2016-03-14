@@ -30,13 +30,11 @@ body.copy #hex {
   font-size: 20px; }
 
 nav {
-  position: fixed;
+  position: relative;
   top: 0;
   width: 100%;
-  margin: 0 auto;
-  padding-top: 0px;
+  padding-top: 50px;
   z-index: 1;
-  height: 250px;
   background-color: inherit;
   z-index: 2; }
 
@@ -66,19 +64,23 @@ nav {
 .intro {
   transition: 200ms; }
 
+.intro span {
+  padding: 0 5px; }
+
+.bold {
+  font-weight: 700; }
+
 .square {
   font-family: initial; }
 
 main {
-  margin-top: 250px;
   display: inline-block;
-  font-size: 0;
   position: relative;
   width: 810px;
   text-align: left; }
 
 main > section {
-  text-align: center; }
+  text-align: left; }
 
 main > section > img {
   max-width: 80%; }
