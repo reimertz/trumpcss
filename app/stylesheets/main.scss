@@ -35,6 +35,26 @@ nav {
     text-align: center;
   }
 
+  .trump-span {
+    padding: 0 5px;
+    font-weight: 700;
+    &[data-word="0"] {
+      color: inherit;
+    }
+    &[data-word="1"] {
+      color: #718c00;
+    }
+    &[data-word="2"] {
+      color: #eab700;
+    }
+    &[data-word="3"] {
+      color: black;
+    }
+    &[data-word="4"] {
+      color: #f5871f;
+    }
+  }
+
   .info {
     transition: 200ms;
     outline: none;
