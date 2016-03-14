@@ -12,6 +12,7 @@ html
     meta(name='twitter:title', content='brand-colors')
     meta(name='twitter:description', content='trump.css is for those who like to introduce a little bit of Trump. Made by @reimertz')
     meta(name='twitter:image', content='https://cdn.rawgit.com/reimertz/trumpcss/master/trumpcss.png')
+    link(rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.2.0/styles/tomorrow.min.css")
     link(href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600', rel='stylesheet', type='text/css')
     link(rel='stylesheet', type='text/css', href='dist/latest/trump.latest.css')
     link(rel='stylesheet', type='text/css', href='styles.css')
@@ -21,15 +22,17 @@ html
         h1
           span#brand-name trump.css
         p#hex
-          | trump.css - if you want to add a little bit of Trump on your homepage.
-        p npm install trumpcss
+          | if you want to add a little bit of Trump on your homepage.
+        p.bold npm install trumpcss
       section.intro
         p
           a(href='//github.com/reimertz/trumpcss') github
           span.square &#x25A0;
-          a(href='//twitter.com/reimertz') @reimertz
+          a(href='//twitter.com/reimertz') @reimertz(coder)
+          span.square &#x25A0;
+          a(href='//twitter.com/reimertz') @brad_frost(idea)
         p
-          - var s = 'if want to add a little bit of Trump on your homepage.'
+          - var s = 'trump.css - if want to add a little bit of Trump on your homepage.'
           - var encodedString = encodeURIComponent(s);
 
           a(class="twitter-share-button" href="https://twitter.com/intent/tweet?text=#{encodedString}") Tweet
@@ -37,8 +40,34 @@ html
           iframe(src='https://ghbtns.com/github-btn.html?user=reimertz&repo=trumpcss&type=fork&count=true', frameborder='0', scrolling='0', width='90px', height='20px')
     main
       section
-        img(src="/trumpcss.png")
+        pre
+          code.
+            &lt;!DOCTYPE html&gt;
+            &lt;html&gt;
+            &lt;head&gt;
+              &lt;title&gt;Trump.css&lt;/title&gt;
+              &lt;link rel=&quot;stylesheet&quot; href=&quot;/trumpcss/latest/trump.latest.css&quot;&gt;`
+            &lt;/head&gt;
+            &lt;body&gt;
 
+              &lt;section id=&quot;usa&quot;&gt;
+                &lt;!-- use #usa to draw 1600px wide border at bottom of container --&gt;
+
+                &lt;div class=&quot;muslims&quot;&gt;Not visible&lt;/div&gt;
+                &lt;div class=&quot;women&quot;&gt;Very small font&lt;/div&gt;
+                &lt;div class=&quot;migrants--undocumented&quot;&gt;Move container 2000000px down&lt;/div&gt;
+                &lt;p class=&quot;press&quot;&gt;Disable browsers text-to-speak functionality&lt;/p&gt;
+                &lt;canvas class=&quot;policies&quot;&gt;
+                  &lt;!-- disable perspective --&gt;
+                &lt;/canvas&gt;
+
+                &lt;!-- use #usa and get a :after pseudo element containing the text &quot;absolutely ruined&quot; --&gt;
+              &lt;/section&gt;
+
+            &lt;/body&gt;
+            &lt;/html&gt;
+
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.2.0/highlight.min.js')
     script(src='index.js')
     script.
       !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
