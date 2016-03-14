@@ -4,157 +4,89 @@ body {
   font-family: 'Open Sans', sans-serif;
   margin: 0 auto 100px auto;
   text-align: center;
-  transition: background-color 200ms;
   position: relative; }
-
-body.copy li[class^="bc-"]:not(.clicked),
-body.copy .intro,
-body.copy #search {
-  opacity: 0.1;
-  pointer-events: none; }
 
 a {
   color: inherit;
   font-weight: 700;
   text-decoration: none; }
-
-a:hover {
-  text-decoration: underline; }
-
-body.copy #cpy {
-  opacity: 1; }
-
-body.copy #brand-name {
-  font-size: 50px; }
-
-body.copy #hex {
-  font-size: 20px; }
+  a:hover {
+    text-decoration: underline; }
 
 nav {
   position: relative;
-  top: 0;
-  width: 100%;
-  padding-top: 50px;
-  z-index: 1;
-  background-color: inherit;
-  z-index: 2; }
+  padding-top: 50px; }
+  nav iframe {
+    width: 90px !important; }
+  nav .title {
+    transition: 200ms;
+    font-size: 50px;
+    font-weight: 400;
+    margin: 0;
+    line-height: 25px;
+    text-align: center; }
+  nav .info {
+    transition: 200ms;
+    outline: none; }
 
-#brand-name {
-  transition: 200ms;
-  font-size: 50px;
-  font-weight: 400;
-  margin: 0;
-  line-height: 25px;
-  text-align: center; }
+@keyframes trump-spin {
+  0% {
+    filter: hue-rotate(0deg);
+    -webkit-filter: hue-rotate(0deg);
+    transform: scale(0) rotate(-160deg);
+    opacity: 0; }
+  50% {
+    opacity: 1; }
+  80% {
+    transform: scale(1.2) rotate(390deg); }
+  100% {
+    filter: hue-rotate(360deg);
+    -webkit-filter: hue-rotate(360deg);
+    transform: scale(1) rotate(360deg); } }
 
-#hex {
-  transition: 200ms;
-  outline: none; }
-
-#hex::-moz-selection {
-  /* Code for Firefox */
-  color: white;
-  background: black;
-  padding: 2px 10px; }
-
-#hex::selection {
-  color: white;
-  background: black;
-  padding: 2px 10px; }
-
-.logo {
-  width: 300px; }
-
-.intro {
-  transition: 200ms; }
-
-.intro span {
-  padding: 0 5px; }
-
-.bold {
-  font-weight: 700; }
-
-.square {
-  font-family: initial; }
+@keyframes trump-spin-hover {
+  0% {
+    transform: scale(1) rotate(360deg); }
+  100% {
+    transform: scale(1) rotate(360deg); } }
+  nav .trump {
+    width: 300px;
+    animation-name: trump-spin;
+    animation-duration: 750ms;
+    transition: 1000ms; }
+    nav .trump:hover {
+      filter: hue-rotate(360deg);
+      -webkit-filter: hue-rotate(360deg); }
+  nav .intro span {
+    padding: 0 5px; }
+  nav .intro .bold {
+    font-weight: 700; }
+  nav .square {
+    font-family: initial; }
 
 main {
   display: inline-block;
   position: relative;
   width: 810px;
   text-align: left; }
-
-main > section {
-  text-align: left; }
-
-main > section > img {
-  max-width: 80%; }
-
-iframe {
-  width: 90px !important; }
-
-::-webkit-input-placeholder {
-  color: inherit; }
-
-input#search {
-  color: white;
-  margin: 0;
-  padding: 0;
-  height: 35px;
-  border: none;
-  background: tomato;
-  width: 132px;
-  display: inline-block;
-  position: absolute;
-  z-index: 1;
-  padding-left: 8px;
-  outline: none;
-  font-weight: 500;
-  text-transform: uppercase;
-  border-radius: 0; }
-
-ol#companies {
-  position: relative;
-  display: inline-block;
-  text-align: left;
-  padding: 0;
-  font-size: 0px;
-  line-height: 0px; }
-
-ol li:first-child {
-  margin-left: 140px; }
-
-li[class^="bc-"] {
-  cursor: pointer;
-  display: inline-block;
-  font-size: 0px;
-  height: 35px;
-  margin: 0 0;
-  padding: 0;
-  position: relative;
-  text-align: center;
-  width: 35px;
-  transition: width 350ms; }
+  main section {
+    text-align: left; }
+    main section img.trump {
+      max-width: 80%; }
 
 @media (max-width: 850px) {
-  #brand-name {
+  .title {
     font-size: 28px; }
   .hljs {
     font-size: 12px; }
-  body.copy #brand-name {
+  body.copy .title {
     font-size: 30px; }
   .text {
     padding: 10px;
     font-size: 12px;
     text-align: center; }
-  #hex {
-    font-size: 12px; }
-  body.copy #hex {
-    font-size: 16px; }
-  main {
-    width: 90%;
-    text-align: left; }
-  ol#companies {
-    width: 315px; } }
+  .info {
+    font-size: 12px; } }
 
 @media (max-width: 400px) {
   .hljs {
