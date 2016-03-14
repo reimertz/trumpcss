@@ -75,6 +75,8 @@ main {
       max-width: 80%; }
 
 @media (max-width: 850px) {
+  main {
+    max-width: 80%; }
   .title {
     font-size: 28px; }
   .hljs {
