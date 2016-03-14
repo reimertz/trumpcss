@@ -7,31 +7,21 @@
 * may be freely distributed under the MIT license.
 */
 
-#usa {
-  border-bottom: 16000px solid grey:
-}
+body { color: orange; }
 
-.muslims {
-  display: none !important;
-}
+#usa { border-bottom: 16000px solid grey: }
 
-.women {
-  font-size: xx-small
-}
+.muslims { display: none !important; }
+
+.women { font-size: xx-small }
 
 .migrants--undocumented {
   position: relative;
   bottom: -2000000px;
 }
 
-.press {
-  speak: none;
-}
+.press { speak: none; }
 
-.policies {
-  perspective: none;
-}
+.policies { perspective: none; }
 
-#usa:after {
-  content: 'absolutely ruined';
-}
+#usa:after { content: 'absolutely ruined'; }
