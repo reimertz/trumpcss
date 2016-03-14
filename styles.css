@@ -25,6 +25,19 @@ nav {
     margin: 0;
     line-height: 25px;
     text-align: center; }
+  nav .trump-span {
+    padding: 0 5px;
+    font-weight: 700; }
+    nav .trump-span[data-word="0"] {
+      color: inherit; }
+    nav .trump-span[data-word="1"] {
+      color: #718c00; }
+    nav .trump-span[data-word="2"] {
+      color: #eab700; }
+    nav .trump-span[data-word="3"] {
+      color: black; }
+    nav .trump-span[data-word="4"] {
+      color: #f5871f; }
   nav .info {
     transition: 200ms;
     outline: none; }
