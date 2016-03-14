@@ -27,17 +27,28 @@ nav {
     text-align: center; }
   nav .trump-span {
     padding: 0 5px;
-    font-weight: 700; }
-    nav .trump-span[data-word="0"] {
-      color: inherit; }
-    nav .trump-span[data-word="1"] {
-      color: #718c00; }
-    nav .trump-span[data-word="2"] {
-      color: #eab700; }
-    nav .trump-span[data-word="3"] {
-      color: black; }
-    nav .trump-span[data-word="4"] {
-      color: #f5871f; }
+    font-weight: 700;
+    transition: 500ms; }
+    body[data-word] nav .trump-span {
+      color: #ffdc18; }
+    body[data-word="0"] nav .trump-span {
+      filter: hue-rotate(0deg);
+      -webkit-filter: hue-rotate(0deg); }
+    body[data-word="1"] nav .trump-span {
+      filter: hue-rotate(60deg);
+      -webkit-filter: hue-rotate(60deg); }
+    body[data-word="2"] nav .trump-span {
+      filter: hue-rotate(120deg);
+      -webkit-filter: hue-rotate(120deg); }
+    body[data-word="3"] nav .trump-span {
+      filter: hue-rotate(180deg);
+      -webkit-filter: hue-rotate(180deg); }
+    body[data-word="4"] nav .trump-span {
+      filter: hue-rotate(240deg);
+      -webkit-filter: hue-rotate(240deg); }
+    body[data-word="5"] nav .trump-span {
+      filter: hue-rotate(300deg);
+      -webkit-filter: hue-rotate(300deg); }
   nav .info {
     transition: 200ms;
     outline: none; }
@@ -65,11 +76,29 @@ nav {
   nav .trump {
     width: 300px;
     animation-name: trump-spin;
-    animation-duration: 750ms;
-    transition: 1000ms; }
+    animation-duration: 1750ms;
+    transition: 500ms; }
     nav .trump:hover {
       filter: hue-rotate(360deg);
       -webkit-filter: hue-rotate(360deg); }
+    body[data-word="0"] nav .trump {
+      filter: hue-rotate(0deg);
+      -webkit-filter: hue-rotate(0deg); }
+    body[data-word="1"] nav .trump {
+      filter: hue-rotate(60deg);
+      -webkit-filter: hue-rotate(60deg); }
+    body[data-word="2"] nav .trump {
+      filter: hue-rotate(120deg);
+      -webkit-filter: hue-rotate(120deg); }
+    body[data-word="3"] nav .trump {
+      filter: hue-rotate(180deg);
+      -webkit-filter: hue-rotate(180deg); }
+    body[data-word="4"] nav .trump {
+      filter: hue-rotate(240deg);
+      -webkit-filter: hue-rotate(240deg); }
+    body[data-word="5"] nav .trump {
+      filter: hue-rotate(300deg);
+      -webkit-filter: hue-rotate(300deg); }
   nav .intro span {
     padding: 0 5px; }
   nav .intro .bold {
@@ -92,6 +121,26 @@ main {
     max-width: 80%; }
   .title {
     font-size: 28px; }
+    body[data-word] .title {
+      color: #ffdc18; }
+    body[data-word="0"] .title {
+      filter: hue-rotate(0deg);
+      -webkit-filter: hue-rotate(0deg); }
+    body[data-word="1"] .title {
+      filter: hue-rotate(60deg);
+      -webkit-filter: hue-rotate(60deg); }
+    body[data-word="2"] .title {
+      filter: hue-rotate(120deg);
+      -webkit-filter: hue-rotate(120deg); }
+    body[data-word="3"] .title {
+      filter: hue-rotate(180deg);
+      -webkit-filter: hue-rotate(180deg); }
+    body[data-word="4"] .title {
+      filter: hue-rotate(240deg);
+      -webkit-filter: hue-rotate(240deg); }
+    body[data-word="5"] .title {
+      filter: hue-rotate(300deg);
+      -webkit-filter: hue-rotate(300deg); }
   .hljs {
     font-size: 12px; }
   body.copy .title {
