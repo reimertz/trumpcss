@@ -1,7 +1,7 @@
 trump.css
 =========
 
-![](trumpcss_small.png)
+![](https://raw.githubusercontent.com/reimertz/trumpcss/master/app/logo.png)
 
 trump.css is for those who like to introduce a little bit of Trump
 on their homepage.
