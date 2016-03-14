@@ -17,7 +17,7 @@ function getTemplateData() {
 }
 
 gulp.task('dev-extras', function () {
-  return gulp.src(['./app/CNAME', './app/trumpcss.png'])
+  return gulp.src(['./app/CNAME', './app/*.png'])
     .pipe(gulp.dest('.tmp/'))
 });
 
