@@ -6,7 +6,6 @@ on their homepage.",
   "homepage": "https://trumpcss.com",
   "main": "/dist/latest/trump.latest.css",
   "author": "Pierre Reimertz <pierre@pierrereimertz.com>",
-  "homepage": "http://trumpcss.com",
   "keywords": [
     "trump",
     "css",
