@@ -13,7 +13,10 @@ body { color: orange; }
 
 .muslims { display: none !important; }
 
-.women { font-size: xx-small }
+.women {
+  font-size: xx-small;
+  cursor: grab;
+}
 
 .migrants--undocumented {
   position: relative;
